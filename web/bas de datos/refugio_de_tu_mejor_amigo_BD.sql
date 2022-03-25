@@ -38,7 +38,9 @@ mascotas_id int not null,
 fecha_de_adopcion varchar (40) not null
 );
 
-
+ insert into adopcion (usuario_id,mascotas_id,fecha_de_adopcion)
+     values(2,2,"20/03/2022"),
+	  (4,2,"11/03/2022");
 
 --OPCINAL 
 
@@ -52,8 +54,6 @@ fecha_de_adopcion varchar (40) not null
 	--				  ("lucy","ladrador","hembra","perro","no"),
 		--			  ("luna","gato persa","hembra","gato","si");
 					  
- insert into adopcion (usuario_id,mascotas_id,fecha_de_adopcion)
- values(2,2,"20/03/2022"),
-	  (4,2,"11/03/2022");--
+
 	   	   	   
 	

@@ -37,7 +37,7 @@
                                 <a class="nav-link" style="padding-right: 0px" href="ListarUsuario.htm">USUARIOS</a><a style="padding-left: 0px"class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-bs-toggle="dropdown">:</a>
                                  
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <li><a class="dropdown-item" href="consultarUsuarioxId.htm">Consultar usuario por ID</a></li>
+                                    
                                     <li><a class="dropdown-item" href="consultarUsuarioxNombre.htm">Consultar usuario por Nombre</a></li>
                                     <li><a class="dropdown-item" href="consultarUsuarioxapellido.htm">Consultar usuario por apellido</a></li>
                                     <li><a class="dropdown-item" href="consultarUsuarioxtipoid.htm">Consultar usuario por tipo  id</a></li>
@@ -50,7 +50,7 @@
                                 <a class="nav-link" style="padding-right: 0px" href="ListarMascotas.htm">MASCOTAS</a><a style="padding-left: 0px"class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-bs-toggle="dropdown">:</a>
                                  
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <li><a class="dropdown-item" href="consultarMascotaXId.htm">Consultar mascotas ID</a></li>
+                                 
                                     <li><a class="dropdown-item" href="consultarMascotaXNombre.htm">Consultar por nombre mascota</a></li>
                                     <li><a class="dropdown-item" href="consultarMascotaXRaza.htm">Consultar mascota por raza</a></li>
                                     <li><a class="dropdown-item" href="consultarMascotaXGenero.htm">Consultar mascota por genero</a></li>

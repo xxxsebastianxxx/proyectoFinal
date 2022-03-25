@@ -13,7 +13,8 @@ tipo_de_identificacion varchar (40) not null,
 identificacion int not null,
 direccion varchar (50) not null,
 fotoUsuario varchar (200),
-fotoOld varchar (200)
+fotoOld varchar (200),
+limiteadopcion int(11)
 );  
  
 drop table if exists mascotas;
@@ -26,7 +27,7 @@ tipo_de_mascotas varchar (40) not null,
 vacunas varchar (10) not null,
 fotoMascota varchar (200),
 fotoOld varchar (200),
-is_adopted tinyint(1) DEFAULT 0
+is_adopted  bit(1) DEFAULT 0
 );
 
 drop table if exists adopcion;

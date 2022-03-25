@@ -1,0 +1,54 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 16/03/2022, 06:46:24 PM
+    Author     : ryzen3
+*/
+
+.prindiv1{
+  height: 53.6rem;
+  background-image: url("https://c4.wallpaperflare.com/wallpaper/26/58/362/animales-corre-hierba-perro-wallpaper-preview.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  background-color: #999;
+/*  image-rendering: auto;*/
+  image-rendering:auto ;
+}
+.prinp1{
+    
+    color:white ;
+    text-align:justify;
+    font-family:cursive ;
+    font-size: 1.5rem;
+    padding-left: 9rem;
+    padding-right: 37rem;
+    padding-top:15rem ; 
+    position: absolute;
+    margin-top: 6rem;
+}
+.prindiv2{
+  height: 53.6rem;
+  background-image: url("https://cdn.pixabay.com/photo/2016/10/31/14/55/rottweiler-1785760__480.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  background-color: #999;
+/*  image-rendering: auto;*/
+  image-rendering:auto ;
+}
+.prinp2{
+    color:#393a3b ;
+    text-align:justify;
+    font-family:cursive;
+    font-size: 1.5rem;
+    padding-right: 2rem;
+    padding-left:38rem ;
+    position: absolute;
+    margin-top: 3rem;
+}

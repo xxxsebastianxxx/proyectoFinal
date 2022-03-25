@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!-- was: <?xml version="1.0" encoding="UTF-8"?> -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd
+       http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.0.xsd">
+
+    <bean class="org.springframework.web.servlet.mvc.support.ControllerClassNameHandlerMapping"/>
+
+    <!--
+    Most controllers will use the ControllerClassNameHandlerMapping above, but
+    for the index controller we are using ParameterizableViewController, so we must
+    define an explicit mapping for it.
+    -->
+    <bean id="urlMapping" class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+        <property name="mappings">
+            <props>
+               
+                <prop key="btnValidarLogin.htm">principalController</prop>
+                <prop key="PrincipalADMIN.htm">principalController</prop>
+                <prop key="index.htm">indexController</prop>
+                <prop key="formUsuario.htm">principalController</prop>
+                <prop key="formMascota.htm">MascotasController</prop>
+                <prop key="updateMascota.htm">MascotasController</prop>                
+                <prop key="VistaUsuario.htm">principalController</prop>
+                <prop key="deleteUsuario.htm">principalController</prop>
+                <prop key="VistaMascotas.htm">MascotasController</prop>
+                <prop key="ListarUsuario.htm">principalController</prop>
+                <prop key="updateUsuario.htm">principalController</prop>
+                <prop key="ListarMascotas.htm">MascotasController</prop>
+                <prop key="deleteMascota.htm">MascotasController</prop>  
+                <prop key="adoptarMascota.htm">AdopcionController</prop>               
+                <prop key="formRegistarAdopcion.htm">AdopcionController</prop>
+                <prop key="ListarAdopcion.htm">AdopcionController</prop>
+                <prop key="deleteAdopcion.htm">AdopcionController</prop>
+                <prop key="updateadopcion.htm">AdopcionController</prop>
+                <prop key="consultarUsuarioxId.htm">principalController</prop>
+                <prop key="consultarUsuarioxNombre.htm">principalController</prop>
+                
+                <prop key="consultarUsuarioxapellido.htm">principalController</prop>
+                <prop key="consultarUsuarioxtipoid.htm">principalController</prop>
+                <prop key="consultarUsuarioxidentificacion.htm">principalController</prop>
+                <prop key="consultarUsuarioxdireccion.htm">principalController</prop>
+                
+                <prop key="consultarMascotaXId.htm">MascotasController</prop>  
+                <prop key="consultarMascotaXNombre.htm">MascotasController</prop> 
+                <prop key="consultarMascotaXRaza.htm">MascotasController</prop> 
+                <prop key="consultarMascotaXGenero.htm">MascotasController</prop> 
+                <prop key="consultarMascotaXTipodemascotas.htm">MascotasController</prop> 
+                <prop key="consultarMascotaXVacunas.htm">MascotasController</prop> 
+                
+                
+                 <prop key="consultarAdopcionXId.htm">AdopcionController</prop>
+                 <prop key="consultarAdopcionXFecha.htm">AdopcionController</prop>
+                
+            </props>
+        </property>
+    </bean>
+
+    <bean id="viewResolver"
+          class="org.springframework.web.servlet.view.InternalResourceViewResolver"
+          p:prefix="/WEB-INF/jsp/"
+          p:suffix=".jsp" />
+
+    <!--
+    The index controller.
+    -->
+    <bean name="indexController"
+          class="org.springframework.web.servlet.mvc.ParameterizableViewController"
+          p:viewName="index" />
+    
+    <bean name="principalController" 
+          class="controllers.principalController"/>
+    
+     <bean name="MascotasController" 
+          class="controllers.MascotasController"/>
+     
+    
+       <bean name="AdopcionController" 
+          class="controllers.AdopcionController"/>
+
+</beans>

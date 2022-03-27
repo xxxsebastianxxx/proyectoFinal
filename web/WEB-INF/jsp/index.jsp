@@ -18,16 +18,22 @@
     <body class="fondocss">
       <nav class="navbar" style="background-color: #0dcaf0;">
         <div class="container-fluid">
-            <p  style="margin-left: 33rem; margin-top: 10px;">
+            <p  style="text-align: center; margin-top:7px ; color: white; font-family: cursive;">
             ADOPTA A TU MEJOR AMIGO 
           </p>
         </div>
       </nav>
         <div>
-            <div class="divlog"> 
-                <a href="PrincipalADMIN.htm" class="btn btn-primary m-6" 
-                   style=" margin-top: 12rem; margin-left: 10rem; width: 8rem; height:4rem ;">entrar</a>
-            </div> 
+            
+            <div class="card text-white bg-secondary mb-3" style="max-width: 18rem; margin-top: 20rem; margin-left: 18rem;">
+                <div class="card-header">BIENVENIDO</div>
+                <div class="card-body">
+                  <h5 class="card-title">Ingresar</h5>
+                  <p class="card-text">adopta a tu mejor amigo y a la mejor compañia</p>
+                </div>
+                 <a href="PrincipalADMIN.htm" class="btn btn-primary m-6">Ingresar</a>
+            </div>
+            
                 
              
          </div>r

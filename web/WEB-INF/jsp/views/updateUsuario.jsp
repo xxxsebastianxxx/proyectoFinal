@@ -24,8 +24,11 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>actualizar usuario</title>
     </head>
-    <body>
+    <body style="background-color:#e8fffb;">
         <%@include file="../views/caebezera.jsp" %>
+        <br>
+        <br>
+        <br>
          <h4 style="font-family: cursive;
                    padding: 18px;
                    text-align: center;
@@ -37,6 +40,12 @@
                      padding-left: 22rem; 
                      padding-right: 22rem;
                      margin-bottom: 10.7rem;">
+            <img style="height: 200px; 
+                        width: 200px; 
+                        margin-bottom: 1rem;
+                        margin-left: 12rem;
+                        border: 0.1px solid black;
+                        border-radius: 50%;" alt="tu foto :(" src="<c:out value="${usuario.fotoOld}"></c:out>"/>
             
              <c:if test="${not empty param.error}">
                     <div class="alert alert-danger">
@@ -78,13 +87,14 @@
             <div >
                 <form:label style="margin-bottom: 7px;" path="fotoUsuario" cssClass="input-group-adddon">foto:</form:label> 
               <br>
-                <img style="height: 50px; width: 55px;" alt="tu foto :(" src="<c:out value="${usuario.fotoOld}"></c:out>"/>
+                
+                
                 <form:input path="fotoUsuario" type="file" cssClass="form-control"></form:input>
                 
             </div><br>
             
                 <form:button name="enviar" class="btn btn-warning">EDITAR</form:button>
-                <a class="btn btn-primary " href="index.htm" role="button">atras</a>
+                <a class="btn btn-primary " href="PrincipalADMIN.htm" role="button">atras</a>
         </form:form>
                 
                

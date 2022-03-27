@@ -25,25 +25,22 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>formulario mascota</title>
     </head>
-    <body style="background-color: white;">
+    <body style="background-color:#e8fffb;">
         <%@include file="../views/caebezera.jsp" %>
+        <br>
+        <br>
+        <br>
         <h4 style="font-family: cursive;
                    padding: 18px;
                    text-align: center;
                    color: black;">
-            formulario mascotas!
+            añadir mascota
         </h4>
         <hr>
         
-        <div style=" padding-left: 22rem; 
-                     padding-right: 22rem;
-                     margin-bottom: 10.7rem;">
-            
-         <%--    <c:if test="${not empty param.error}">
-                    <div class="alert alert-danger">
-                        <strong>Error! </strong><c:out value="${param.error}"></c:out><br>                     
-                    </div>
-                </c:if>--%>
+        <div style="width: 33rem;
+                    height: 54;
+                    margin-left:22rem;">
             
             <form:form commandName="mascotas" cssClass="navbar-form"  enctype="multipart/form-data">
                 <form:errors path="*" element="div" cssClass="btn btn-warning"></form:errors>
@@ -82,7 +79,10 @@
                 <a class="btn btn-primary " href="index.htm" role="button">atras</a>
         </form:form>
         </div>
-        
+        <br>
+        <br>
+        <br>
+        <br>
          <%@include file="../views/footer.jsp" %> 
     </body>
 </html>

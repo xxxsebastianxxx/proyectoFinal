@@ -25,13 +25,17 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>actualizar mascota</title>
     </head>
-    <body style="background-color: white;">
+    <body style="background-color:#e8fffb;">
         <%@include file="../views/caebezera.jsp" %>
+        <br>
+        <br>
+        <br>
+        <br>
         <h4 style="font-family: cursive;
                    padding: 18px;
                    text-align: center;
                    color: black;">
-            formulario mascotas!
+            Editar mascota
         </h4>
         <hr>
         
@@ -39,11 +43,12 @@
                      padding-right: 22rem;
                      margin-bottom: 10.7rem;">
             
-         <%--    <c:if test="${not empty param.error}">
-                    <div class="alert alert-danger">
-                        <strong>Error! </strong><c:out value="${param.error}"></c:out><br>                     
-                    </div>
-                </c:if>--%>
+         <img style=" height: 200px; 
+                        width: 200px; 
+                        margin-bottom: 1rem;
+                        margin-left: 12rem;
+                        border: 0.1px solid black;
+                        border-radius: 50%;" alt="tu foto :(" src="<c:out value="${mascotas.fotoOld}"></c:out>"/>
             
             <form:form commandName="mascotas"  method="POST" cssClass="navbar-form" enctype="multipart/form-data">
                 <form:errors path="*" element="div" cssClass="btn btn-warning"></form:errors>
@@ -75,13 +80,13 @@
               <div >
                 <form:label style="margin-bottom: 7px;" path="fotoMascota" cssClass="input-group-adddon">foto:</form:label> 
               <br>
-                <img style="height: 50px; width: 55px;" alt="tu foto :(" src="<c:out value="${mascotas.fotoOld}"></c:out>"/>
+                
                 <form:input path="fotoMascota" type="file" cssClass="form-control"></form:input>
                 
             </div><br>
                 <form:button name="enviar" class="btn btn-warning btn-ig">enviar</form:button>
                 <a class="btn btn-primary " href="ListarMascotas.htm" role="button">listar mascotas</a>
-                <a class="btn btn-primary " href="index.htm" role="button">atras</a>
+                <a class="btn btn-primary " href="PrincipalADMIN.htm" role="button">atras</a>
         </form:form>
         </div>
         

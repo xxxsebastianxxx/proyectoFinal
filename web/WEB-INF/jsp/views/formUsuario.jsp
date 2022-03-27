@@ -23,13 +23,18 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>formulario usuario</title>
     </head>
-    <body>
+    <body style="background-color:#e8fffb;"> 
         <%@include file="../views/caebezera.jsp" %>
+        <br>
+        <br>
+        <br>
+        <br>
+        
          <h4 style="font-family: cursive;
                    padding: 18px;
                    text-align: center;
                    color: black;">
-            formulario usuario!
+            añadir usuario!
         </h4>
         <hr>
         <div style=" 

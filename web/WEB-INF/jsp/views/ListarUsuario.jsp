@@ -21,19 +21,29 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>vista usuario</title>
     </head>
-    <body >
+    <body style="background-color:#e8fffb  ; ">
   
         <%@include file="../views/caebezera.jsp"%>
         
-        <h4 style="text-align: center; color:greenyellow ;">
-            listado usuario 
+        <br>
+        <br>
+        <br>
+        <h4 style="text-align: center; 
+            margin-top: 2rm;
+            color:#1da890;
+            font-family:cursive;
+            font-size: 2rem;">
+          usuarios
         </h4>
 
-           <div  style="padding-left:8rem; padding-right: 8rem; padding-top: 3rem; padding-bottom:8rem;">
+           <div style="padding: 4rem;">
                <table class="table table-striped table-bordered " id="dtusuarios"  >
                 <thead>
                     
-                   <a href="formUsuario.htm" class="btn btn-primary">add Usuario</a>
+                   <a href="formUsuario.htm" class="btn btn-primary"
+                      style=" border: 1px solid black;
+                       border-radius: 50%;
+                       margin-bottom: 2rem;">+</a>
                     <tr>
                         <th>id</th>
                         <th>nombre</th>
@@ -55,19 +65,19 @@
                         <td><c:out value="${usuarios.tipo_de_identificacion}"></c:out></td>
                         <td><c:out value="${usuarios.identificacion}"></c:out></td>
                         <td><c:out value="${usuarios.direccion}"></c:out></td>
-                        <td> <img style="height: 50px; width: 55px;" alt="tu foto :(" src="<c:out value="${usuarios.fotoUsuario}"></c:out>"/> </td>
+                        <td> <img style="margin-left: 43px; height: 60px; width: 60px; border: 0.1px solid black; border-radius: 50%;" alt="tu foto :(" src="<c:out value="${usuarios.fotoUsuario}"></c:out>"/> </td>
                         <td>
                             <a href="updateUsuario.htm?id_usuario=${usuarios.id_usuario}&fotoOld=${usuarios.fotoUsuario}"
-                               class="btn btn-warning">editar</a> /
+                               class="btn btn-warning rounded-pill">editar</a> /
                             <a href="deleteUsuario.htm?id_usuario=${usuarios.id_usuario}&fotoUsuario=${usuarios.fotoUsuario}"
-                              class="btn btn-danger">borrar</a>
+                              class="btn btn-danger rounded-pill">borrar</a>
                        </td>
                     </tr>
                   </c:forEach>  
                 </tbody>
                
             </table>
-            
+               <a class="btn btn-success rounded-pill" href="PrincipalADMIN.htm" style="margin-top: 1rem;">atras</a>
         </div>    
         
                

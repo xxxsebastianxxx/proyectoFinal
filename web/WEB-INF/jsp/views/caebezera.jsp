@@ -23,7 +23,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
     </head>
-    <body>
+    <body >
         <div style="position: fixed;  width: 100%;z-index: 2;">
             <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #0dcaf0;" >
             <div class="container-fluid">

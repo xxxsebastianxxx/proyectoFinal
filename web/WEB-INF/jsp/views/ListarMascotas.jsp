@@ -22,18 +22,26 @@
         
         <title>vista mascotas</title>
     </head>
-    <body>        
+    <body style="background-color:#e8fffb  ; ">        
         <%@include file="../views/caebezera.jsp" %>
         <br>
         <br>
         <br>
-        <h4 style="text-align: center; color:greenyellow ;">
-           listado de mascotas!
+        <h4 style="
+            text-align: center; 
+            margin-top: 2rm;
+            color:#1da890;
+            font-family:cursive;
+            font-size: 2rem;">
+            mascotas
         </h4>
-        <div style="padding-left:8rem; padding-right: 8rem; padding-top: 3rem; padding-bottom:8rem;"> 
+        <div style="padding: 4rem;"> 
         <table class="table table-striped table-bordered " id="dtmascotas" style="whidth: 100%">
             <thead>
-                <a href="formMascota.htm" class="btn btn-primary">add Mascota</a> 
+                <a href="formMascota.htm" class="btn btn-primary"
+                   style=" border: 1px solid black;
+                       border-radius: 50%;
+                       margin-bottom: 2rem;">+</a> 
               <tr>
                 <th scope="col">id</th>
                 <th scope="col">nombre</th>
@@ -55,17 +63,18 @@
                   <td><c:out value="${mascotas.genero}"></c:out></td>
                   <td><c:out value="${mascotas.tipo_de_mascotas}"></c:out></td>
                   <td><c:out value="${mascotas.vacunas}"></c:out></td>
-                  <td> <img style="height: 70px; width: 67px; border:  1px solid #000; border-radius: 50%; margin-left: 60px;" alt="tu foto :(" src="<c:out value="${mascotas.fotoMascota}"></c:out>"/> </td>
-                  <td> <a href="deleteMascota.htm?id_mascotas=${mascotas.id_mascotas}&fotoMascota=${mascotas.fotoMascota}" class="btn btn-danger">borrar</a> 
-                  /    <a href="updateMascota.htm?id_mascotas=${mascotas.id_mascotas}&fotoOld=${mascotas.fotoMascota}" class="btn btn-warning">editar</a>
-                      <a href="formRegistarAdopcion.htm?id=${mascotas.id_mascotas}" class="btn btn-primary mt-3 rounded-pill" style="border-radius: 13px;">Adoptar</a> 
+                  <td> <img style="margin-left: 43px; height: 60px; width: 60px; border: 0.1px solid black; border-radius: 50%;"  alt="tu foto :(" src="<c:out value="${mascotas.fotoMascota}"></c:out>"/> </td>
+                  <td> <a href="deleteMascota.htm?id_mascotas=${mascotas.id_mascotas}&fotoMascota=${mascotas.fotoMascota}" class="btn btn-danger rounded-pill">borrar</a> 
+                  /    <a href="updateMascota.htm?id_mascotas=${mascotas.id_mascotas}&fotoOld=${mascotas.fotoMascota}" class="btn btn-warning rounded-pill">editar</a>
+                  /    <a href="formRegistarAdopcion.htm?id=${mascotas.id_mascotas}" class="btn btn-primary rounded-pill" >Adoptar</a> 
                                    
                   </td>
               </tr>
               </c:forEach>
             </tbody>
           </table>
-              <a class="btn btn-prymary" href="formMascota.htm">atras</a>
+                <a class="btn btn-success rounded-pill" href="PrincipalADMIN.htm"
+                 style="margin-top: 1rem">atras</a>
         </div>
       <%@include file="../views/footer.jsp" %>
       

@@ -22,18 +22,27 @@
         
         <title>ADOPCION</title>
     </head>
-    <body>        
+    <body style="background-color:#e8fffb  ; ">        
         <%@include file="../views/caebezera.jsp" %>
         <br>
         <br>
         <br>
-        <h4 style="text-align: center; color: greenyellow;" >
-            ADOPCION!
+        <h4 style="
+            text-align: center; 
+            margin-top: 2rm;
+            color:#1da890;
+            font-family:cursive;
+            font-size: 2rem;" >
+            Adopcion 
         </h4>
-        <div style="padding-left:8rem; padding-right: 8rem; padding-top: 3rem; padding-bottom:8rem;"> 
+        <div style="padding: 4rem;"> 
         <table class="table table-striped table-bordered " id="dtmascotas" style="whidth: 100%">
             <thead>
-                <a href="formRegistarAdopcion.htm" class="btn btn-primary">Adoptar Mascota</a> 
+            <a href="formRegistarAdopcion.htm" class="btn btn-primary" 
+               style=" border: 1px solid black;
+                       border-radius: 50%;
+                       margin-bottom: 2rem;">+</a> 
+                       
               <tr>
                 <th scope="col">CODIGO DE ADOPCION</th>
                 <th scope="col">NOMBRE</th>
@@ -49,18 +58,19 @@
               <tr>
                   <td><c:out value="${datos.id_adopcion}"></c:out></td>
                   <td><c:out value="${datos.nombre}"></c:out></td>
-                  <td><img style="height: 50px; width: 55px;" alt="tu foto :(" src="<c:out value="${datos.fotoUsuario}"></c:out>"/></td>
+                  <td><img style="margin-left: 43px; height: 60px; width: 60px; border: 0.1px solid black; border-radius: 50%;"  alt="tu foto :(" src="<c:out value="${datos.fotoUsuario}"></c:out>"/></td>
                   <td><c:out value="${datos.nombre_mascota}"></c:out></td>
-                  <td><img style="height: 50px; width: 55px;" alt="tu foto :(" src="<c:out value="${datos.fotoMascota}"></c:out>"/></td>
+                  <td><img style="margin-left: 43px; height: 60px; width: 60px; border: 0.1px solid black; border-radius: 50%;"  alt="tu foto :(" src="<c:out value="${datos.fotoMascota}"></c:out>"/></td>
                   <td><c:out value="${datos.fecha_de_adopcion}"></c:out></td>
-                  <td> <a href="deleteAdopcion.htm?id_adopcion=${datos.id_adopcion}" class="btn btn-danger">borrar</a> 
-                  /    <a href="updateadopcion.htm?id_adopcion=${datos.id_adopcion}" class="btn btn-warning">editar</a></td>
+                  <td> <a href="deleteAdopcion.htm?id_adopcion=${datos.id_adopcion}" class="btn btn-danger rounded-pill">borrar</a> 
+                  /    <a href="updateadopcion.htm?id_adopcion=${datos.id_adopcion}" class="btn btn-warning rounded-pill">editar</a></td>
               </tr>
           </c:forEach>
             </tbody>
            
           </table>
-              <a class="btn btn-primary" href="index.htm">atras</a>
+              <a class="btn btn-success rounded-pill" href="PrincipalADMIN.htm"
+                 style="margin-top: 1rem">atras</a>
         </div>
       <%@include file="../views/footer.jsp" %>
       

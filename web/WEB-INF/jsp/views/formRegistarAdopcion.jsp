@@ -25,8 +25,12 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>formulario mascota</title>
     </head>
-    <body style="background-color: white;">
+    <body style="background-color:#e8fffb;">
         <%@include file="../views/caebezera.jsp" %>
+        <br>
+        <br>
+        <br>
+        <br>
         <h4 style="font-family: cursive;
                    padding: 18px;
                    text-align: center;

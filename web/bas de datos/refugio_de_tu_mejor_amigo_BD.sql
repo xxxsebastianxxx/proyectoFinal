@@ -39,8 +39,7 @@ fecha_de_adopcion varchar (40) not null
 );
 
  insert into adopcion (usuario_id,mascotas_id,fecha_de_adopcion)
-     values(2,2,"20/03/2022"),
-	  (4,2,"11/03/2022");
+     values(4,2,"11/03/2022");
 
 --OPCINAL 
 
